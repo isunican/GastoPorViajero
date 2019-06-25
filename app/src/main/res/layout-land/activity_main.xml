@@ -88,6 +88,8 @@
 
     </TableRow>
 
+    <TableRow android:gravity="center">
+
     <Button
         android:id="@+id/btnCalcular"
         android:layout_width="wrap_content"
@@ -96,11 +98,11 @@
         android:layout_marginBottom="50dp"
         android:backgroundTint="@color/colorAccent"
         android:elevation="15dp"
-        android:ems="10"
+        android:ems="5"
         android:text="@string/calcular"
         android:textAlignment="center" />
 
-    <EditText
+    <TextView
         android:id="@+id/txtResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -111,5 +113,6 @@
         android:textColor="@color/colorAccent"
         android:textSize="24sp" />
 
+    </TableRow>
 
 </TableLayout>
