@@ -2,7 +2,7 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relativeLayout"
+    android:id="@+id/tableLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
@@ -23,8 +23,7 @@
             android:ems="3"
             android:inputType="numberDecimal"
             android:text="0"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toTopOf="@+id/txtKm" />
+            android:textAlignment="center" />
 
     </TableRow>
 
@@ -34,9 +33,7 @@
             android:id="@+id/textViewKm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/km"
-            app:layout_constraintBaseline_toBaselineOf="@+id/txtKm"
-            app:layout_constraintStart_toStartOf="@+id/textViewConsumo" />
+            android:text="@string/km" />
 
         <EditText
             android:id="@+id/txtKm"
@@ -45,8 +42,7 @@
             android:ems="3"
             android:inputType="numberDecimal"
             android:text="0"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toTopOf="@+id/txtPrecio" />
+            android:textAlignment="center" />
 
     </TableRow>
 
@@ -116,8 +112,8 @@
         android:id="@+id/btnAcercade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="@color/colorAccent"
         android:elevation="15dp"
         android:ems="10"
