@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/App-GastoPorViajero.iml" filepath="$PROJECT_DIR$/App-GastoPorViajero.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/App-GastoPorViajero-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/App-GastoPorViajero-app.iml" group="App-GastoPorViajero/app" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/git-App-GastoPorViajero.iml" filepath="$PROJECT_DIR$/.idea/modules/git-App-GastoPorViajero.iml" group="App-GastoPorViajero" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/App-GastoPorViajero.iml" filepath="$PROJECT_DIR$/.idea/modules/App-GastoPorViajero.iml" group="App-GastoPorViajero" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="App-GastoPorViajero/app" />
     </modules>
   </component>
 </project>
