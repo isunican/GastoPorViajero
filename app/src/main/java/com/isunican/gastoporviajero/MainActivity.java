@@ -71,9 +71,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                 / Float.valueOf(txtViajeros.getText().toString());
 
                 txtResultado.setText(String.valueOf(gasto));
-
-                Toast.makeText(this, android.R.string.ok, Toast.LENGTH_SHORT).show();
                 Log.d("operacion","operacion correcta");
+                Toast.makeText(this, R.string.ok, Toast.LENGTH_SHORT).show();
             }
         }
 
