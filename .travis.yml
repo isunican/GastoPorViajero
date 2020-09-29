@@ -1,7 +1,7 @@
 sudo: required
 
 language: android
-jdk: oraclejdk11
+jdk: oraclejdk8
 
 branches:
   only:
@@ -56,7 +56,9 @@ before_install:
 - yes | sdkmanager "system-images;android-$ANDROID_EMULATOR_LEVEL;$ANDROID_ABI"
 
 script:
+  - jdk_switcher use oraclejdk11
   - ./gradlew clean test sonarqube
+  - jdk_switcher use openjdk8
   - mkdir -p build/reports
   - android list targets
   - echo no | android create avd --force -n test -t "android-"$ANDROID_EMULATOR_LEVEL --abi $default/armeabi-v7a #--tag $ANDROID_TAG
