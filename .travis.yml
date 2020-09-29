@@ -57,7 +57,8 @@ before_install:
 
 script:
   - export JAVA_HOME=$HOME/openjdk11
-  - $TRAVIS_BUILD_DIR/install-jdk.sh --install openjdk11 --target $JAVA_HOME
+  # - $TRAVIS_BUILD_DIR/install-jdk.sh --install openjdk11 --target $JAVA_HOME
+  - wget https://github.com/sormuras/bach/raw/master/install-jdk.sh && . ./install-jdk.sh -F 11 -L GPL
   - ./gradlew clean test sonarqube
   - jdk_switcher use oraclejdk8
   - mkdir -p build/reports
