@@ -56,11 +56,12 @@ before_install:
 - yes | sdkmanager "system-images;android-$ANDROID_EMULATOR_LEVEL;$ANDROID_ABI"
 
 script:
-  - export JAVA_HOME=$HOME/openjdk11
-  # - $TRAVIS_BUILD_DIR/install-jdk.sh --install openjdk11 --target $JAVA_HOME
-  - wget https://github.com/sormuras/bach/raw/master/install-jdk.sh && . ./install-jdk.sh -F 11 -L GPL
+  # in case we need Java 11 for sonarqube at some point, use these commented lines
+  # - export JAVA_HOME=$HOME/openjdk11
+  ## this one is the official method, but this script is not present, use the line below instead - $TRAVIS_BUILD_DIR/install-jdk.sh --install openjdk11 --target $JAVA_HOME
+  # - wget https://github.com/sormuras/bach/raw/master/install-jdk.sh && . ./install-jdk.sh -F 11 -L GPL
   - ./gradlew clean test sonarqube
-  - jdk_switcher use oraclejdk8
+  # - jdk_switcher use oraclejdk8
   - mkdir -p build/reports
   - android list targets
   - echo no | android create avd --force -n test -t "android-"$ANDROID_EMULATOR_LEVEL --abi $default/armeabi-v7a #--tag $ANDROID_TAG
